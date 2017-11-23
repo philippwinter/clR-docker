@@ -5,7 +5,7 @@ WORKDIR /clR
 RUN yum -y install epel-release \\
         && yum -y groupinstall "Development Tools" \\
         && yum -y install R \\
-        && yum -y install libcurl-devel libcurl openssl-devel openssl libssh2-devel libssh2 udunits2-devel udunits2 libxml2-devel libxml2 gsl gsl-devel \\
+        && yum -y install libcurl-devel openssl-devel libssh2-devel udunits2-devel libxml2-devel gsl-devel \\
         && yum clean all
 
 # CRAN mirror is set to Uni Göttingen (Germany), choose as appropriate
